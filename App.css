@@ -1,0 +1,81 @@
+/* src/styles/App.css */
+body, html {
+  margin: 10;
+  padding: 15;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow:  8px 10px palevioletred;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border: 2px solid black;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  box-shadow:  8px 10px palevioletred;
+  margin: 5px;
+}
+
+.square:hover {
+  background-color: #f1f1f1;
+  box-shadow:  8px 10px palevioletred;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: palevioletred;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: pink;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.restart-button:hover {
+  background-color: pink;
+  transform: scale(1.05);
+}
+
+.restart-button:active {
+  transform: scale(0.95);
+}
